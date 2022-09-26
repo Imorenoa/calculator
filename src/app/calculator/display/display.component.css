@@ -1,0 +1,20 @@
+.display {
+  display: flex;
+  flex-direction: column;
+  background-color: #3e4d54;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.single-display {
+  text-align: center;
+  display: flex;
+  height: 7vh;
+  justify-content: flex-end;
+  border-bottom: 0.5px solid black;
+}
+
+p {
+  margin-right: 7px;
+  color: white;
+  font-size: 200%;
+}

@@ -1,0 +1,38 @@
+<div class="container">
+  <app-display [userInput]="userInput" [result]="result"></app-display>
+
+  <div class="panel">
+    <div class="numbers-first-row row">
+      <button class="clear-all" (click)="clearAll()">Clear all</button>
+      <button class="division" (click)="pressOperators('/')">/</button>
+    </div>
+    <div class="numbers-second-row row">
+      <button class="number" (click)="pressNum('7')">7</button>
+      <button class="number" (click)="pressNum('8')">8</button>
+      <button class="number" (click)="pressNum('9')">9</button>
+      <button class="button sum operator" (click)="pressOperators('+')">
+        +
+      </button>
+    </div>
+    <div class="numbers-third-row row">
+      <button class="number" (click)="pressNum('4')">4</button>
+      <button class="number" (click)="pressNum('5')">5</button>
+      <button class="number" (click)="pressNum('6')">6</button>
+      <button class="button sub operator" (click)="pressOperators('-')">
+        -
+      </button>
+    </div>
+    <div class="numbers-fourth-row row">
+      <button class="number" (click)="pressNum('1')">1</button>
+      <button class="number" (click)="pressNum('2')">2</button>
+      <button class="number" (click)="pressNum('3')">3</button>
+      <button class="button mult operator" (click)="pressOperators('x')">
+        x
+      </button>
+    </div>
+    <div class="numbers-fifth-row row">
+      <button class="number" (click)="pressNum('0')">0</button>
+      <button class="button mult operator" (click)="getResult()">=</button>
+    </div>
+  </div>
+</div>
